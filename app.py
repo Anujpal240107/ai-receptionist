@@ -9,12 +9,10 @@ from ugly_services.settings import Settings, ConfigurationError
 from ugly_services.backend import Backend, ServiceError
 from ugly_services.chat import reply
 from ugly_services.monitoring import configure, alert
-from ugly_services.revision import revision
 
 st.set_page_config(page_title="AI Restaurant Receptionist", page_icon="🍕", layout="centered")
 st.title("🍕 AI Restaurant Receptionist")
 st.caption("A little ugly. Real saved orders. Powered by Ugly SaaS.")
-st.caption("Release " + revision()[:16])
 
 def private_download(label, raw, filename):
     """Bytes go only through the authorized WebSocket; no public Streamlit media URL."""
@@ -241,5 +239,4 @@ except ServiceError as error:
 except Exception:
     alert("backend_failed")
     st.error("The receptionist is temporarily unavailable. No successful save was confirmed.")
-
 
