@@ -1,0 +1,13 @@
+{
+  "adapter": "python-streamlit-receptionist-v1",
+  "version": "1.0.0",
+  "originalRepository": "https://github.com/Anujpal240107/ai-receptionist",
+  "originalCommit": "6f5750d15fff36a9bbd218c6036d1d879f7b837b",
+  "runtime": {"language": "Python", "version": "3.12", "interface": "Streamlit", "aiProvider": "Groq"},
+  "database": "Supabase PostgreSQL",
+  "identity": "Supabase Auth with live session validation",
+  "files": {"storage": "private PostgreSQL bytea", "maximumBytes": 262144, "perOrder": 10, "perAccountBytes": 5242880},
+  "supportBoundary": "This reviewed restaurant conversation/order app, not arbitrary Python repositories",
+  "publicLaunchRequires": ["live Groq smoke test", "HTTPS and WebSocket-capable Python hosting", "production integration and recovery checks", "source-bound marketplace publication"],
+  "commerce": "No payment collection. The customer's preference is recorded as unpaid."
+}

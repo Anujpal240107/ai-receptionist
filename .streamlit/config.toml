@@ -1,0 +1,27 @@
+[global]
+developmentMode = false
+[logger]
+level = "warning"
+[server]
+headless = true
+fileWatcherType = "none"
+address = "127.0.0.1"
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 1
+enableStaticServing = false
+[browser]
+gatherUsageStats = false
+[client]
+showErrorDetails = "none"
+toolbarMode = "minimal"
+[theme]
+base = "light"
+primaryColor = "#006C4E"
+backgroundColor = "#CDE6C5"
+secondaryBackgroundColor = "#E7F0DD"
+textColor = "#00462A"
+font = "sans-serif"
+
+
+
